@@ -11,6 +11,7 @@ map.set("preferredFruit", "Avocato")
 map.set("School", "U of T")
 map.set("City", "London")
 map.set("Course Taken", 10)
+map.set("Strengh Level", 5)
 
 // This is the map.get method
 console.log(map.get('name'))
@@ -22,3 +23,10 @@ console.log("My name is ", map.get("name"), " " + "and I am ", map.get('age'));
 console.log(map.has("Course Taken"), " It has");
 console.log(map.has("City"), " It does have")
 console.log(map.has("Education "), " it doesn't have it")
+
+// We can also use the map.delete()to remove a key value in the Hashmap
+
+console.log(map.delete("Strengh Level"))
+console.log(map.get("Strengh Level")) // Undefined has it has benn removed
+
+//
